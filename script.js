@@ -27,6 +27,47 @@ lowerCaseCities.map((element) =>element.toUpperCase());
 // using arrow functions instead of inline function. note placing of enclosing map parentheses
 console.log(upperCaseCities); 
 
+const names = ["Jess", "Serena", "Emma"];
+names.push("Anastasia", "Dorothy")
+const namesLength = names.map(function(element) {
+    return element.length;
+});
+console.log(namesLength);
+
+const numberValues = [5, 7, 9, 25];
+const square = numberValues.map((element) => {
+    return element * element
+});
+console.log(square);
+
+
+// array map functions the traditional way
+const testScores = [77, 59, 93, 68];
+const A = []; 
+for (const element of testScores) {
+    if (element >= 90) {
+        A.push(element);
+    }
+}
+console.log(A)
+
+// sorting an array using the filter function 
+const participants =
+["Jonas", "William", "Vuusi", "Tray"];
+const wNames =
+participants.filter(function(element) {
+    return element[0] == "W";
+});
+console.log(wNames);
+
+const week =
+["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+"Friday", "Saturday"];
+const weekDay =
+week.filter((element, index) => {
+return index > 0 && index < 6;
+});
+console.log(weekDay);
 
 
 
