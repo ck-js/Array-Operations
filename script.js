@@ -21,7 +21,11 @@ return index + " " + element;
 });
 console.log(displayQueue);
 
-
+const lowerCaseCities = ["cape town", "tokyo", "berlin"];
+const upperCaseCities =
+lowerCaseCities.map((element) =>element.toUpperCase());
+// using arrow functions instead of inline function. note placing of enclosing map parentheses
+console.log(upperCaseCities); 
 
 
 
