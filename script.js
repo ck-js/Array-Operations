@@ -79,3 +79,18 @@ console.log(totalKms);
 
 
 
+const reps = [20, 10, 11, 14];
+const totalReps =
+reps.reduce(function(prev, curr) {
+    return prev + curr;
+});
+console.log(totalReps);
+const totalRepsArrow =
+reps.reduce((prev, curr) =>
+prev + curr);
+console.log(totalRepsArrow);
+// i realize what the issue was, my closing reduce parentheses was not on same line as operation
+
+
+
+
