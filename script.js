@@ -69,5 +69,13 @@ return index > 0 && index < 6;
 });
 console.log(weekDay);
 
+// moving onto the array reduce function 
+const kms = [23, 33, 53,37];
+let totalKms = 0;
+for (const element of kms) {
+totalKms += element;
+}
+console.log(totalKms);
+
 
 
