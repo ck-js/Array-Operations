@@ -91,6 +91,13 @@ prev + curr);
 console.log(totalRepsArrow);
 // i realize what the issue was, my closing reduce parentheses was not on same line as operation
 
-
-
-
+const buyPrice =
+[300, 350, 250];
+const discount =
+[0.5, 0.10, 0.6];
+const totalWithDiscount =
+buyPrice.reduce(function(prev, curr, index) {
+return prev + (curr * discount[index]);
+});
+// the return statement is interesting... need some time to discect 
+console.log(totalWithDiscount);
