@@ -101,3 +101,16 @@ return prev + (curr * discount[index]);
 });
 // the return statement is interesting... need some time to discect 
 console.log(totalWithDiscount);
+
+const words = ["This", "sentence", "has", "no", "spaces"];
+console.log(words);
+const sentence =
+words.reduce((prev, curr) =>{
+return prev + " " + curr;
+});
+console.log(sentence);
+
+
+
+
+
